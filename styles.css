@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
 nav{
     position: fixed;
+}
+p{
+    margin: 60px 40px;
 }
