@@ -1,2 +1,65 @@
-document.getElementById('body2').scrollIntoView();
-console.dir(document.getElementById('body2'));
+let phrases = ['Hello!', 'Welcome to my portfolio.', 'My name is Ashton Sprunger.'];
+let speed = 100;
+let pause = 1000;
+let delay = 1000;
+
+let totalTime = 0;
+
+let phrase = 0;
+let letter = 0;
+
+// temperary
+
+// speed = 5;
+// pause = 10;
+// delay = 50;
+
+let title = document.getElementById('changing-text');
+
+
+let write = () => {
+    if(phrase < phrases.length){
+        if(letter < phrases[phrase].length){
+            if(letter === 0 && phrase < phrases.length){
+                title.textContent = '';
+            }
+            title.textContent += phrases[phrase][letter];
+            letter++;
+            setTimeout(write, speed);
+            totalTime += speed;
+        }else{
+            letter = 0;
+            phrase++;
+            // setTimeout(write, speed);
+            setTimeout(write, pause);
+            totalTime += pause;
+        }
+    }else{
+        title.id = 'title';
+        document.getElementById('title-text1').id = 'title-text2'
+        document.getElementById('home-content').id = 'home-content2'
+        main();
+    }
+}
+
+setTimeout(write, delay);
+totalTime += delay;
+
+let main = () => {
+    document.getElementById('title-text2').addEventListener('click', e => {
+        document.getElementById('body1').scrollIntoView(true);
+    })
+    document.getElementById('title-text2').addEventListener('mousedown', e => {
+        let btn = e.target;
+        btn.style.boxShadow = 'none';
+        btn.style.top = '2px';
+        btn.style.left = '2px';
+    })
+    document.getElementById('title-text2').addEventListener('mouseup', e => {
+        let btn = e.target;
+        btn.style.boxShadow = '2px 2px';
+        btn.style.top = '0';
+        btn.style.left = '0';
+    })
+
+}
