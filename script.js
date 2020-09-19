@@ -57,9 +57,19 @@ let main = () => {
     })
     document.getElementById('title-text2').addEventListener('mouseup', e => {
         let btn = e.target;
-        btn.style.boxShadow = '2px 2px';
+        btn.style.boxShadow = '2px 2px 5px black';
         btn.style.top = '0';
         btn.style.left = '0';
     })
-
+    window.addEventListener('scroll', e => {
+        let scroll = Math.floor(e.target.scrollingElement.scrollTop);
+        let number = scroll/window.innerHeight;
+        let up = (scroll <= window.innerHeight);
+        if(up){
+            console.log(number);
+            document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, ${number})`;
+        }else{
+            document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, 1)`;
+        }
+    })
 }
