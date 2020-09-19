@@ -61,15 +61,14 @@ let main = () => {
         btn.style.top = '0';
         btn.style.left = '0';
     })
-    window.addEventListener('scroll', e => {
-        let scroll = Math.floor(e.target.scrollingElement.scrollTop);
-        let number = scroll/window.innerHeight;
-        let up = (scroll <= window.innerHeight);
-        if(up){
-            console.log(number);
-            document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, ${number})`;
-        }else{
-            document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, 1)`;
-        }
-    })
 }
+window.addEventListener('scroll', e => {
+    let scroll = Math.floor(e.target.scrollingElement.scrollTop);
+    let number = scroll/window.innerHeight;
+    let up = (scroll <= window.innerHeight);
+    if(up){
+        document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, ${number})`;
+    }else{
+        document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, 1)`;
+    }
+})
