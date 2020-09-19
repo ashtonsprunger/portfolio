@@ -6,9 +6,32 @@
 html{
     scroll-behavior: smooth;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: crimson;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 10, 34);
+}
 .spacer{
     position: relative;
-    height: 60px;
+    height: 56px;
+    /* border-bottom: 2px solid crimson; */
+}
+#body1{
+    border-top: 2px solid black;
 }
 #about{
     position: relative;
@@ -26,6 +49,7 @@ html{
     display: flex;
     flex-direction: column;
     top: 45vh;
+    height: fit-content;
 }
 #home-content2{
     position: relative;
@@ -34,6 +58,7 @@ html{
     flex-direction: column;
     top: 42vh;
     transition: 700ms;
+    height: fit-content;
 }
 #changing-text{
     font-family: 'Roboto Mono', monospace;
@@ -55,6 +80,7 @@ html{
     /* transition: opacity 700ms; */
     /* transition: left 700ms; */
     padding: 5px;
+    margin-top: 20PX;
     width: fit-content;
     pointer-events: none;
     border-radius: 10px;
@@ -65,5 +91,14 @@ html{
     color: white;
 }
 .know-me:hover{
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgba(255, 255, 255, 0);
+}
+h2{
+    text-align: center;
+    color: crimson;
+    font-size: 50px;
+    margin: 10px 0;
+}
+.back{
+    padding: 5px 20px 0;
 }
