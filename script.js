@@ -1,7 +1,7 @@
 let phrases = ['Hello!', 'Welcome to my portfolio.', 'My name is Ashton Sprunger.'];
 let speed = 100;
 let pause = 1000;
-let delay = 1000;
+let delay = 2000;
 
 let totalTime = 0;
 
@@ -15,6 +15,7 @@ let letter = 0;
 // delay = 50;
 
 let title = document.getElementById('changing-text');
+let speakSection = document.getElementById('speak-section');
 
 
 let write = () => {
@@ -72,3 +73,19 @@ window.addEventListener('scroll', e => {
         document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, 1)`;
     }
 })
+
+
+speakSection.addEventListener('submit', callSpeak);
+
+function callSpeak (e){
+    e.preventDefault();
+    speak(document.getElementById('message').value, document.getElementById('voices').value);
+}
+
+function speak (message, voice) {
+    var msg = new SpeechSynthesisUtterance(message);
+    var voices = window.speechSynthesis.getVoices();
+    console.log(voices[1]);
+    msg.voice = voices[voice];
+    window.speechSynthesis.speak(msg);
+}

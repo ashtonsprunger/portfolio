@@ -102,3 +102,7 @@ h2{
 .back{
     padding: 5px 20px 0;
 }
+#images{
+    display: flex;
+    justify-content: space-evenly;
+}
