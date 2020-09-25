@@ -75,17 +75,17 @@ window.addEventListener('scroll', e => {
 })
 
 
-speakSection.addEventListener('submit', callSpeak);
+// speakSection.addEventListener('submit', callSpeak);
 
-function callSpeak (e){
-    e.preventDefault();
-    speak(document.getElementById('message').value, document.getElementById('voices').value);
-}
+// function callSpeak (e){
+//     e.preventDefault();
+//     speak(document.getElementById('message').value, document.getElementById('voices').value);
+// }
 
-function speak (message, voice) {
-    var msg = new SpeechSynthesisUtterance(message);
-    var voices = window.speechSynthesis.getVoices();
-    console.log(voices[1]);
-    msg.voice = voices[voice];
-    window.speechSynthesis.speak(msg);
-}
+// function speak (message, voice) {
+//     var msg = new SpeechSynthesisUtterance(message);
+//     var voices = window.speechSynthesis.getVoices();
+//     console.log(voices[1]);
+//     msg.voice = voices[voice];
+//     window.speechSynthesis.speak(msg);
+// }

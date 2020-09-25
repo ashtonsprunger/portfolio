@@ -106,3 +106,53 @@ h2{
     display: flex;
     justify-content: space-evenly;
 }
+.card img{
+    width: 100%;
+    border-radius: inherit;
+    opacity: 100%;
+}
+.card-text{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 20%;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+    margin: 20px 30px;
+}
+#cards{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: .5em;
+}
+.card{
+    position: relative;
+    transition: all 300ms ease-in-out;
+    border-radius: 20px;
+    opacity: 100%;
+    /* border: 2px solid black; */
+}
+.card:hover{
+    z-index: 2;
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+.black-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 18px;
+    opacity: 70%;
+    transition: opacity 300ms ease-in-out;
+    cursor: pointer;
+}
+.black-overlay:hover{
+    opacity: 0%;
+}
+.black-overlay:hover ~ .card-text{
+    opacity: 0%;
+}
