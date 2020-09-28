@@ -156,3 +156,6 @@ h2{
 .black-overlay:hover ~ .card-text{
     opacity: 0%;
 }
+#contact-back{
+    height: 100vh;
+}
