@@ -10,22 +10,26 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
-        <a class="navbar-brand" href="#">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#body1">ABOUT<span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#body2">PORTFOLIO</a>
-            <a class="nav-link" href="#contact">CONTACT</a>
-          </div>
-        </div>
-    </nav>
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#body1">ABOUT<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#body2">PORTFOLIO</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </nav>
 
-    <div id="about">
-      <div id="home-content">
+  
+  <div class="wrapper" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+  <div id="about">
+    <div id="home-content">
         <h1 id="changing-text"></h1>
         <button class="know-me" id="title-text1">GET TO KNOW ME</button>
       </div>
@@ -35,13 +39,25 @@
 
     <div id="about-back" class="back">
       <h2>ABOUT</h2>
-      <p id="body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cupiditate cumque debitis nisi eligendi illo praesentium molestiae similique autem, dolores, beatae eveniet quibusdam, neque iure consequuntur voluptatem nulla porro. Illum doloribus saepe sed corrupti repudiandae magnam voluptatibus isciunt repudiandae assumenda consequuntur aliquam enim aliquid provident qui iure distinctio sit quas possimus explicabo nostrum deleniti ab voluptas? Velit nisi ipsum nostrum eum eos veriacere nesciunt dolorem doloribus id iure dolorum earum, architecto soluta eos provident deserunt nemo laudantium repellat cumque? Ex aut commodi unde enim assumenda minus mollitia, doloribus tempore voluptate consequatur aspernatur? Sequi architecto deserunt ducimus cum eveniet omnis perspiciatis ab! Vel dolores libero dolor nihil esse beatae fuga, consequatur ratione inventore saepe molestiae nobis doloremque accusamus harum vero laboriosam totam voluptatibus eligendi reprehenderit sint blanditiis error dicta deserunt. Cum impedit nam ad, ab atque non mollitia architecto molestiae totam eligendi, nihil tempora at corporis nemo. Nobis provident quia minima tempora. Molestias itaque ipsum incidunt porro in necessitatibus rerum modi ut veniam dolorum, reiciendis atque asperiores qui tenetur, nobis quasi. Blanditiis, nulla, mollitia earum totam esse beatae odit autem distinctio quibusdam magnam ipsam consequatur vero accusamus? Voluptates.</p>
+
+      <div class="imgText">
+
+      
+        <img id="headshot" src="./assets/ashtonHeadshot.jpg" alt="Ashton Sprunger Headshot">
+
+      <p id="body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cupiditate cumque debitis nisi eligendi illo praesentium molestiae similique autem, dolores, beatae eveniet quibusdam, neque iure consequuntur voluptatem nulla porro. Illum doloribus saepe sed corrupti repudiandae magnam voluptatibus isciunt repudiandae assumenda consequuntur aliquam enim aliquid provident qui iure distinctio sit quas possimus explicabo nostrum deleniti ab voluptas? Velit nisi ipsum nostrum eum eos veriacere nesciunt dolorem doloribus id iure dolorum earum, architecto soluta eos provident deserunt nemo laudantium repellat cumque? Ex aut commodi unde enim assumenda minus mollitia, doloribus tempore voluptate consequatur aspernatur? Sequi architecto deserunt ducimus cum eveniet omnis perspiciatis ab! Vel dolores libero dolor nihil esse beatae fuga, consequatur ratione inventore saepe molestiae nobis doloremque accusamus harum vero laboriosam totam voluptatibus eligendi reprehenderit sint blanditiis error dicta deserunt. Cum impedit nam ad, ab atque non mollitia architecto molestiae totam eligendi, nihil tempora at corporis nemo. Nobis provident quia minima tempora. Molestias itaque ipsum incidunt porro in necessitatibus rerum modi ut veniam dolorum, reiciendis atque asperiores qui tenetur, nobis quasi. Blanditiis, nulla, mollitia earum totam esse beatae odit autem distinctio quibusdam magnam ipsam consequatur vero accusamus? Voluptates.</p>
     </div>
+  </div>
     <div class="spacer" id="body2"></div>
 
     <div id="portfolio-back" class="back">
       <h2>PORTFOLIO</h2>
-        
+      
+      <a id="resume" href="./assets/Resume.pdf">CLICK TO DOWNLOAD RESUME</a>
+      
+      <h4>Some projects I have made while going through Eleven Fifty Academy</h4>
+
       <div id="cards">
         <div class="card" id="card-racers">
           <a href="https://ashtonsprunger.github.io/API-project/" class="black-overlay" target="blank"></a>
@@ -94,7 +110,7 @@
       </div>
 
 
-      <a id="resume" href="./assets/Resume.pdf">CLICK TO DOWNLOAD RESUME</a>
+
 
 
       <!-- <form id="speak-section">
@@ -148,7 +164,7 @@
       <p>Copyright © Ashton G. Sprunger 2020. All Rights Reserved</p>
     </footer>
     
-    
+  </div>
     
     
     

@@ -28,6 +28,7 @@ html{
 .spacer{
     position: relative;
     height: 56px;
+    width: 100%;
     /* border-bottom: 2px solid crimson; */
 }
 #body1{
@@ -48,7 +49,7 @@ html{
     width: 80%;
     display: flex;
     flex-direction: column;
-    top: 45vh;
+    top: 35vh;
     height: fit-content;
 }
 #home-content2{
@@ -56,7 +57,7 @@ html{
     width: 80%;
     display: flex;
     flex-direction: column;
-    top: 42vh;
+    top: 32vh;
     transition: 700ms;
     height: fit-content;
 }
@@ -85,13 +86,13 @@ html{
     pointer-events: none;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
-    border: 1px solid white;
-    background-color: rgb(0, 0, 0);
+    border: none;
+    background-color: crimson;
     position: relative;
     color: white;
 }
 .know-me:hover{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(160, 14, 43);
 }
 h2{
     text-align: center;
@@ -117,7 +118,7 @@ h2{
     text-align: center;
     top: 8%;
     pointer-events: none;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
     margin: 20px 30px;
 }
 #cards{
@@ -130,15 +131,15 @@ h2{
 }
 .card{
     position: relative;
-    transition: all 300ms ease-in-out;
+    transition: all 150ms ease-in-out;
     border-radius: 20px;
     opacity: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.685); */
     /* border: 2px solid black; */
 }
 .card:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 20px black;
 }
 .black-overlay{
     width: 100%;
@@ -147,7 +148,7 @@ h2{
     background-color: black;
     border-radius: 18px;
     opacity: 70%;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
     cursor: pointer;
 }
 .black-overlay:hover{
@@ -174,14 +175,20 @@ textarea{
     height: 100px;
 }
 #submit{
-    border-color: crimson;
+    border: none;
     margin-bottom: 40px;
-    background-color: rgb(231, 231, 231);
+    background-color: crimson;
+    color: white;
+    transition: all 150ms ease-in-out;
+}
+#submit:hover{
+    background-color: rgb(160, 14, 43);
+    color: white;
 }
 footer{
     background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px 50px;
+    padding: 10px 50px 15px;
 }
 footer p{
     margin-bottom: 0;
@@ -207,6 +214,7 @@ footer a{
     font-size: 30px;
     margin: 40px auto;
     text-align: center;
+    transition: all 150ms ease-in-out;
 }
 #resume:hover{
     background-color: rgb(160, 14, 43);
@@ -215,9 +223,31 @@ footer a{
 #email-phone{
     color: rgb(156, 156, 156);
 }
-
+#headshot{
+    width: 100%;
+    float: left;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#body-1{
+    height: min-content;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen and (min-width: 768px){
+    #home-content{
+        top: 40vh;
+    }
+    #home-content2{
+        top: 37vh;
+    }
+    #headshot{
+        width: 50%;
+        margin-right: 20px;
+    }
     fieldset{
         width: min-content;
         margin: 0 auto;
@@ -252,6 +282,15 @@ footer a{
 }
 
 @media only screen and (min-width: 1000px){
+    #home-content{
+        top: 45vh;
+    }
+    #home-content2{
+        top: 42vh;
+    }
+    #headshot{
+        width: 25%;
+    }
     #cards{
         grid-template-columns:repeat(3, 1fr);
         grid-gap: 1.5em;

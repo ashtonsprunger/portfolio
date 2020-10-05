@@ -1,7 +1,7 @@
 let phrases = ['Hello!', 'Welcome to my portfolio.', 'My name is Ashton Sprunger.'];
 let speed = 100;
 let pause = 1000;
-let delay = 2000;
+let delay = 1000;
 
 let totalTime = 0;
 
@@ -43,7 +43,7 @@ let write = () => {
     }
 }
 
-setTimeout(write, delay);
+
 totalTime += delay;
 
 let main = () => {
@@ -74,6 +74,9 @@ window.addEventListener('scroll', e => {
     }
 })
 
+window.addEventListener('load', function () {
+    setTimeout(write, delay);
+})
 
 // speakSection.addEventListener('submit', callSpeak);
 
