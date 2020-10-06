@@ -166,10 +166,11 @@ form input, textarea{
     width: 100%;
     text-align: center;
     margin: 10px 0;
-    height: 40px;
+    /* height: 40px; */
     border-radius: 25px;
     border: 3px solid blue;
     outline: none;
+    font-size: 25px;
 }
 textarea{
     height: 100px;
@@ -229,12 +230,16 @@ footer a{
     border-radius: 20px;
     margin-bottom: 10px;
 }
-#body-1{
+/* #body-1{
     height: min-content;
-}
+} */
 .wrapper{
     display: flex;
     flex-direction: column;
+}
+#card-ex{
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px){
@@ -282,6 +287,10 @@ footer a{
 }
 
 @media only screen and (min-width: 1000px){
+    #card-ex{
+        padding: 0 50px;
+        margin-bottom: 0;
+    }
     #home-content{
         top: 45vh;
     }
