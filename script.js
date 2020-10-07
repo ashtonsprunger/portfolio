@@ -58,8 +58,8 @@ function doIt(){
     let elements = document.getElementsByTagName('div');
     for (var i = 0, len = elements.length; i < len; i++) {
         let current = elements[i];
-        current.style.position = 'absolute';
         current.style.transition = 'all 200ms'
+        current.style.position = 'absolute';
     }
     document.getElementById('easterButton').onclick = undo;
     randomize();
