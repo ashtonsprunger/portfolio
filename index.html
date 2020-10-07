@@ -11,6 +11,7 @@
 </head>
 <body>
   
+
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
     <a class="navbar-brand" href="#">HOME</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +25,9 @@
       </div>
     </div>
   </nav>
+
+
+  <button id="easterButton" onclick="doIt()">RANDOMIZE!</button>
 
   
   <div class="wrapper" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
@@ -45,19 +49,10 @@
       
         <img id="headshot" src="./assets/ashtonHeadshot.jpg" alt="Ashton Sprunger Headshot">
 
-        <p>
-          Hi, my name is Ashton Sprunger. In 2020, I graduated from highschool and <a href="https://www.elevenfifty.org" target="blank">Eleven Fifty Academy</a>. Eleven Fifty is a three month long, immersive, full time coding bootcamp. I took their web development course which taught me HTML, CSS and JavaScript, and more advanced concepts.
-          
-          </p>
-          <p>
-          
-          I grew up second in line out of 8 kids, currently ranging from nineteen years old, all the way down to two years old. My dad teaches technology at Carroll and my mom homeschools us. Us kids have always been trained to work hard and efficiently.
-          
-          </p>
-          <p>
-          
-          My list of hobbies is huge and always changing. One of them being musical instruments and writing songs on the piano. I am always learning more about music and picking up new skills as I go, such as the ukulele. I also love anything mechanical including, building things, fixing clocks, and more! Other interests of mine include, photography, video editing, volleyball and most recently, coding!
-          
+          <p id="about-me-para">
+            
+          Hi, my name is Ashton Sprunger. I am a graduate of the Web Development Program at <a href="https://www.elevenfifty.org" target="blank">Eleven Fifty Academy</a> in Indianapolis. This program is an immersive, full-time bootcamp which taught me HTML, CSS, and JavaScript.  I come from a large family with parents engaged in the fields of technology and education, so I've been raised with an interest in technology and a love of learning new things.  Effort and efficiency define my work ethic.  I have many hobbies with which to use my creativity and analytical skills.  I am always learning more about music, challenging myself to pick up new instruments, and I love anything mechanical (fixing clocks and dreaming up new things to build!).  Now I combine all of those skills into my new passion: coding!
+
           </p>
           
     </div>
@@ -80,7 +75,7 @@
             <p>This app pulls up to 1000 F1 race car drivers from the F1 API. (HTML, CSS and JavaScript)</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-nyt">
           <a href="https://ashtonsprunger.github.io/NYT-Searcher/" class="black-overlay" target="blank"></a>
           <img src="./assets/NYT-articles.png" alt="">
           <div class="card-text">
@@ -88,7 +83,7 @@
             <p>More with API's, using the NYT API, this app display results from your query. (HTML, CSS and JavaScript)</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-static">
           <a href="https://ashtonsprunger.github.io/static-layout/" class="black-overlay" target="blank"></a>
           <img src="./assets/static-layout.png" alt="">
           <div class="card-text">
@@ -96,7 +91,7 @@
             <p>This is my visual replica of Eleven Fifty's website using HTML and CSS.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-creature">
           <a href="https://codepen.io/ashtonSprunger/pen/ZEWxdxV" class="black-overlay" target="blank"></a>
           <img src="./assets/CSS-creature.png" alt="">
           <div class="card-text">
@@ -104,7 +99,7 @@
             <p>A simple but funny little creature made with HTML and CSS.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-piglatin">
           <a href="https://ashtonsprunger.github.io/piglatin/" class="black-overlay" target="blank"></a>
           <img src="./assets/piglatin.png" alt="">
           <div class="card-text">
@@ -112,7 +107,7 @@
             <p>Input some English text, and receive the Pig Latin translation.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="card-giphy">
           <a href="https://as-giphyapi-b8fe0.web.app/" class="black-overlay" target="blank"></a>
           <img src="./assets/giphy.png" alt="">
           <div class="card-text">
@@ -175,6 +170,7 @@
       </p>
       <p id="email-phone">Email: sprungerashton@gmail.com | Phone: (260)-710-9478</p>
       <p>Copyright © Ashton G. Sprunger 2020. All Rights Reserved</p>
+      <p id="easter-egg">this site contains an easter egg. hint: reveal</p>
     </footer>
     
   </div>

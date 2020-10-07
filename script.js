@@ -1,12 +1,18 @@
 let phrases = ['Hello!', 'Welcome to my portfolio.', 'My name is Ashton Sprunger.'];
+let easterEggString = 'reveal';
+let currentString = '';
 let speed = 100;
 let pause = 1000;
 let delay = 1000;
+
+let textArea = document.getElementById('message');
 
 let totalTime = 0;
 
 let phrase = 0;
 let letter = 0;
+let highestIndex = 20;
+
 
 // temperary
 
@@ -43,6 +49,41 @@ let write = () => {
     }
 }
 
+function codeRed(){
+    document.getElementById('easterButton').style.display = 'block';
+}
+
+function doIt(){
+    document.getElementById('easterButton').innerText = 'FIX!';
+    let elements = document.getElementsByTagName('div');
+    for (var i = 0, len = elements.length; i < len; i++) {
+        let current = elements[i];
+        current.style.position = 'absolute';
+        current.style.transition = 'all 200ms'
+    }
+    document.getElementById('easterButton').onclick = undo;
+    randomize();
+}
+
+function undo(){
+    location.reload();
+}
+
+function randomize(){
+    let elements = document.getElementsByTagName('div');
+    let random = Math.floor(Math.random()*elements.length)
+    let top = Math.random()*50;
+    let left = Math.random()*50;
+
+    let current = elements[random];
+    current.style.top = top + '%';
+    current.style.left = left + '%';
+    current.style.zIndex = highestIndex;
+    highestIndex++;
+    setTimeout(randomize, 200);
+}
+
+
 
 totalTime += delay;
 
@@ -77,6 +118,31 @@ window.addEventListener('scroll', e => {
 window.addEventListener('load', function () {
     setTimeout(write, delay);
 })
+
+$(document).on("keypress", function (e) {
+    // console.log(e.which);
+
+
+    if(textArea.value.length < 5){
+        if(e.which == 114){
+            currentString += 'r';
+        }else if(e.which == 101){
+            currentString += 'e';
+        }else if(e.which == 118){
+            currentString += 'v';
+        }else if(e.which == 97){
+            currentString += 'a';
+        }else if(e.which == 108){
+            currentString += 'l';
+        }else{
+            currentString += 'x'
+        }
+    }
+    if(currentString.includes(easterEggString)){
+        codeRed();
+        currentString = '';
+    }
+});
 
 // speakSection.addEventListener('submit', callSpeak);
 

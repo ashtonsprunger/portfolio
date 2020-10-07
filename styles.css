@@ -193,7 +193,7 @@ footer{
 }
 footer p{
     margin-bottom: 0;
-    color: rgb(107, 107, 107);
+    color: rgb(122, 122, 122);
 }
 #footer-p{
     color: crimson;
@@ -222,7 +222,11 @@ footer a{
     text-decoration: none;
 }
 #email-phone{
-    color: rgb(156, 156, 156);
+    color: rgb(206, 206, 206);
+}
+#easter-egg{
+    color: rgb(78, 78, 78);
+    display: none;
 }
 #headshot{
     width: 100%;
@@ -241,8 +245,36 @@ footer a{
     margin-bottom: 40px;
     text-align: center;
 }
+#about-me-para{
+    line-height: 40px;
+    letter-spacing: .5px;
+    /* font-size: 15px; */
+    color: rgb(87, 87, 87);
+}
+#about-me-para a{
+    color: rgb(73, 146, 255);
+}
+#easterButton{
+    z-index: 20000;
+    color: greenyellow;
+    position: fixed;
+    outline: none;
+    margin: 20px;
+    padding: 0px 10px;
+    background-color: rgb(255, 0, 221);
+    border: 5px solid;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    display: none;
+}
+
 
 @media only screen and (min-width: 768px){
+    #easter-egg{
+        display: block;
+    }
     #home-content{
         top: 40vh;
     }
