@@ -49,11 +49,22 @@ let write = () => {
     }
 }
 
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
 function codeRed(){
     document.getElementById('easterButton').style.display = 'block';
 }
 
 function doIt(){
+    playAudio();
     document.getElementById('easterButton').innerText = 'FIX!';
     let elements = document.getElementsByTagName('div');
     for (var i = 0, len = elements.length; i < len; i++) {
