@@ -108,10 +108,13 @@ window.addEventListener('scroll', e => {
     let scroll = Math.floor(e.target.scrollingElement.scrollTop);
     let number = scroll/window.innerHeight;
     let up = (scroll <= window.innerHeight);
+    let nav = document.getElementsByTagName('nav')[0].style;
     if(up){
-        document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, ${number})`;
+        nav.backgroundColor = `rgba(0, 0, 0, ${number})`;
+        nav.boxShadow = `0 0 20px rgba(0, 0, 0, ${number})`
     }else{
-        document.getElementsByTagName('nav')[0].style.backgroundColor = `rgba(0, 0, 0, 1)`;
+        nav.backgroundColor = `rgba(0, 0, 0, 1)`;
+        nav.boxShadow = `0 0 20px rgba(0, 0, 0, 1)`
     }
 })
 

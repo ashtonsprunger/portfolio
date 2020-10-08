@@ -6,6 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
+nav{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -245,6 +248,17 @@ footer a{
     margin-bottom: 40px;
     text-align: center;
 }
+#audio-ex{
+    margin-bottom: 40px;
+    text-align: center;
+}
+audio {
+    /* height: 40px; */
+    width: 100%;
+    border: 2px solid rgb(189, 189, 189);
+    border-radius: 100px;
+    outline: none;
+}
 #about-me-para{
     line-height: 40px;
     letter-spacing: .5px;
@@ -274,6 +288,9 @@ footer a{
 
 
 @media only screen and (min-width: 768px){
+    audio {
+        width: 75%;
+    }
     #easter-egg{
         display: block;
     }
@@ -321,6 +338,9 @@ footer a{
 }
 
 @media only screen and (min-width: 1000px){
+    audio {
+        width: 50%;
+    }
     #card-ex{
         padding: 0 50px;
         margin-bottom: 0;
