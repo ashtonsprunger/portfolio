@@ -59,11 +59,17 @@ function pauseAudio() {
   x.pause();
 }
 
+function scrollToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 function codeRed(){
     document.getElementById('easterButton').style.display = 'block';
 }
 
 function doIt(){
+    scrollToTop();
     playAudio();
     document.getElementById('easterButton').innerText = 'FIX!';
     let elements = document.getElementsByTagName('div');
