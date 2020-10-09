@@ -6,12 +6,12 @@
 html{
     scroll-behavior: smooth;
 }
-#card-blue-badge{
+/* #card-blue-badge{
     background-image: url('./assets/blue.png');
 }
 #card-red-badge{
     background-image: url('./assets/red.png');
-}
+} */
 .navbar-nav a:hover{
     cursor: pointer;
 }
