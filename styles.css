@@ -7,10 +7,10 @@ html{
     scroll-behavior: smooth;
 }
 #card-blue-badge{
-    background-color: rgb(59, 121, 255);
+    background-image: url('./assets/blue.png');
 }
 #card-red-badge{
-    background-color: crimson;
+    background-image: url('./assets/red.png');
 }
 .navbar-nav a:hover{
     cursor: pointer;
