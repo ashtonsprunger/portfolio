@@ -117,9 +117,9 @@ if(window.innerWidth >= 1000){
   console.log('IS IT WORKING')
   $(".main").tiltedpage_scroll({
     sectionContainer: "> section",
-    angle: 10,
+    angle: 2,
     opacity: false,
-    scale: true,
+    scale: false,
     outAnimation: true
   });
 }
