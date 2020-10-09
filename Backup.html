@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashton Sprunger</title>
+    <link rel="icon" href="./assets/orange-circle.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+  
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="#">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#body1">ABOUT<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#body2">PORTFOLIO</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <button id="easterButton" onclick="doIt()">DON'T CLICK THIS BUTTON</button>
+  
+  
+  <div class="wrapper" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    
+    <div id="about">
+      <div id="home-content">
+        <h1 id="changing-text"></h1>
+        <button class="know-me" id="title-text1">GET TO KNOW ME</button>
+      </div>
+    </div>
+    
+    <div class="spacer" id="body1"></div>
+    
+    <div id="about-back" class="back">
+      <h2>ABOUT</h2>
+      
+      <div class="imgText">
+        
+        <img id="headshot" src="./assets/ashtonHeadshot.jpg" alt="Ashton Sprunger Headshot">
+        
+        <p id="about-me-para">
+          
+          Hi, my name is Ashton Sprunger. I am a graduate of the Web Development Program at <a href="https://www.elevenfifty.org" target="blank">Eleven Fifty Academy</a> in Indianapolis. This program is an immersive, full-time bootcamp which taught me HTML, CSS, and JavaScript.  I come from a large family with parents engaged in the fields of technology and education, so I've been raised with an interest in technology and a love of learning new things.  Effort and efficiency define my work ethic.  I have many hobbies with which to use my creativity and analytical skills.  I am always learning more about music, challenging myself to pick up new instruments, and I love anything mechanical (fixing clocks and dreaming up new things to build!).  Now I combine all of those skills into my new passion: coding!
+          
+        </p>
+          
+    </div>
+  </div>
+    <div class="spacer" id="body2"></div>
+
+    <div id="portfolio-back" class="back">
+      <h2>PORTFOLIO</h2>
+      
+      <a id="resume" href="./assets/Resume.pdf">CLICK TO DOWNLOAD RESUME</a>
+      
+      <h4 id="card-ex">Here are some projects I have made while going through Eleven Fifty Academy:</h4>
+
+      <div id="cards">
+        <div class="card" id="card-racers">
+          <a href="https://ashtonsprunger.github.io/API-project/" class="black-overlay" target="blank"></a>
+          <img src="./assets/F1-racers.png" alt="">
+          <div class="card-text">
+            <h3>F1 RACE CAR DRIVERS</h3>
+            <p>This app pulls up to 1000 F1 race car drivers from the F1 API. (HTML, CSS and JavaScript)</p>
+          </div>
+        </div>
+        <div class="card" id="card-nyt">
+          <a href="https://ashtonsprunger.github.io/NYT-Searcher/" class="black-overlay" target="blank"></a>
+          <img src="./assets/NYT-articles.png" alt="">
+          <div class="card-text">
+            <h3>NEW YORK TIMES</h3>
+            <p>More with API's, using the NYT API, this app display results from your query. (HTML, CSS and JavaScript)</p>
+          </div>
+        </div>
+        <div class="card" id="card-static">
+          <a href="https://ashtonsprunger.github.io/static-layout/" class="black-overlay" target="blank"></a>
+          <img src="./assets/static-layout.png" alt="">
+          <div class="card-text">
+            <h3>STATIC LAYOUT</h3>
+            <p>This is my visual replica of Eleven Fifty's website using HTML and CSS.</p>
+          </div>
+        </div>
+        <div class="card" id="card-creature">
+          <a href="https://codepen.io/ashtonSprunger/pen/ZEWxdxV" class="black-overlay" target="blank"></a>
+          <img src="./assets/CSS-creature.png" alt="">
+          <div class="card-text">
+            <h3>CSS CREATURE</h3>
+            <p>A simple but funny little creature made with HTML and CSS.</p>
+          </div>
+        </div>
+        <div class="card" id="card-piglatin">
+          <a href="https://ashtonsprunger.github.io/piglatin/" class="black-overlay" target="blank"></a>
+          <img src="./assets/piglatin.png" alt="">
+          <div class="card-text">
+            <h3>PIG LATIN TRANSLATOR</h3>
+            <p>Input some English text, and receive the Pig Latin translation.</p>
+          </div>
+        </div>
+        <div class="card" id="card-giphy">
+          <a href="https://as-giphyapi-b8fe0.web.app/" class="black-overlay" target="blank"></a>
+          <img src="./assets/giphy.png" alt="">
+          <div class="card-text">
+            <h3>GIPHY GIFS</h3>
+            <p>The Giphy app allows you to quickly pull gifs from Giphy's API.</p>
+          </div>
+        </div>
+      </div>
+
+      <div align="center">
+        <audio controls id="myAudio">
+          <source src="./assets/Ashton Sprunger - Mysteries.m4a" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+
+
+
+      <!-- <form id="speak-section">
+        <p>
+          <label for="message">Message: </label>
+          <input type="text" id="message" required placeholder="Type something">
+          <select name="voices" id="voices">
+            <option value="0">First</option>
+            <option value="1">Second</option>
+            <option value="2">Third</option>
+            <option value="3">Fourth</option>
+            <option value="4">Fifth</option>
+            <option value="5">Sixth</option>
+          </select>
+          <button type="submit">Speak!</button>
+        </p>
+      </form> -->
+
+    </div>
+
+    
+    <div id="contact-back" class="back">
+      <div class="spacer" id="contact"></div>
+      <h2>CONTACT</h2>
+
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/sprungerashton@gmail.com" method="post">
+          <fieldset id="fs-frm-inputs">
+
+            <input type="text" name="name" id="full-name" placeholder="Your name" required="">
+
+            <input type="email" name="_replyto" id="email-address" placeholder="Your email address" required="">
+
+            <textarea name="message" id="message" placeholder="Your message" required=""></textarea>
+            
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <input id="submit" type="submit" value="SEND">
+          </fieldset>
+      </form>
+
+      
+    </div>
+    
+    <footer>
+      <p id="footer-p">
+        <a href="https://github.com/ashtonsprunger">GitHub</a>
+        ⋅
+        <a href="https://www.linkedin.com/in/ashton-sprunger-a714971b7/">LinkedIn</a>
+        <a href=""></a>
+      </p>
+      <p id="email-phone">Email: sprungerashton@gmail.com | Phone: (260)-710-9478</p>
+      <p>Copyright © Ashton G. Sprunger 2020. All Rights Reserved</p>
+      <p id="easter-egg">this site contains an easter egg. hint: reveal</p>
+    </footer>
+    
+  </div>
+    
+    
+    
+     
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     
+     <script src="./script.js"></script>
+     
+    </body>
+</html>

@@ -29,10 +29,7 @@ html{
     position: relative;
     height: 56px;
     width: 100%;
-    /* border-bottom: 2px solid crimson; */
-}
-#body1{
-    border-top: 2px solid black;
+    border-top: 2px solid;
 }
 #about{
     position: relative;
@@ -101,7 +98,9 @@ h2{
     margin: 10px 0;
 }
 .back{
-    padding: 5px 20px 0;
+    padding: 0 20px;
+    height: 100%;
+    background-color: white;
 }
 #images{
     display: flex;
@@ -190,6 +189,7 @@ footer{
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 50px 15px;
+    /* margin-top: 10px; */
 }
 footer p{
     margin-bottom: 0;
@@ -332,6 +332,28 @@ audio {
 }
 
 @media only screen and (min-width: 1000px){
+    .tps-wrapper{
+        background-color: white;
+    }
+    .spacer{
+        height: 0;
+    }
+    body{
+        overflow-x: hidden;
+        background: linear-gradient(crimson, black);
+    }
+    footer{
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+    }
+    .main section{
+        height: 100vh;
+    }
+    nav{
+        width: fit-content;
+        border-bottom-right-radius: 25px;
+    }
     audio {
         width: 50%;
     }
@@ -349,9 +371,10 @@ audio {
         width: 25%;
     }
     #cards{
-        grid-template-columns:repeat(3, 1fr);
-        grid-gap: 1.5em;
+        grid-template-columns:repeat(4, 1fr);
+        grid-gap: 1em;
         padding: 50px;
+        width: 100%;
     }
     #full-name{
         width: 49.5%;

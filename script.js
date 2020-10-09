@@ -24,6 +24,9 @@ let title = document.getElementById('changing-text');
 let speakSection = document.getElementById('speak-section');
 
 
+
+
+
 let write = () => {
     if(phrase < phrases.length){
         if(letter < phrases[phrase].length){
