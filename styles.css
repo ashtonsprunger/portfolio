@@ -6,6 +6,12 @@
 html{
     scroll-behavior: smooth;
 }
+#card-blue-badge{
+    background-color: rgb(59, 121, 255);
+}
+#card-red-badge{
+    background-color: crimson;
+}
 .navbar-nav a:hover{
     cursor: pointer;
 }
