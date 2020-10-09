@@ -213,7 +213,7 @@ footer p{
 footer a{
     color: inherit;
 }
-#resume{
+/* #resume{
     display: block;
     position: relative;
     width: 100%;
@@ -224,11 +224,11 @@ footer a{
     margin: 40px auto;
     text-align: center;
     transition: all 150ms ease-in-out;
-}
-#resume:hover{
+} */
+/* #resume:hover{
     background-color: rgb(160, 14, 43);
     text-decoration: none;
-}
+} */
 #email-phone{
     color: rgb(206, 206, 206);
 }
