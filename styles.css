@@ -6,6 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
+.navbar-nav a:hover{
+    cursor: pointer;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -29,7 +32,6 @@ html{
     position: relative;
     height: 56px;
     width: 100%;
-    border-top: 2px solid;
 }
 #about{
     position: relative;

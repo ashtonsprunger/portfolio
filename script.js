@@ -13,6 +13,10 @@ let phrase = 0;
 let letter = 0;
 let highestIndex = 20;
 
+let html = document.querySelector('html');
+let body1 = document.querySelector('#body1');
+let body2 = document.querySelector('#body2');
+let contact = document.querySelector('#contact');
 
 // temperary
 
@@ -49,6 +53,34 @@ let write = () => {
         document.getElementById('title-text1').id = 'title-text2'
         document.getElementById('home-content').id = 'home-content2'
         main();
+    }
+}
+
+function smartScroll(pixels){
+    window.scroll(0, pixels);
+}
+
+function scroll1(){
+    if(window.innerWidth >= 1000){
+        smartScroll(window.innerHeight);
+    }else{
+        body1.scrollIntoView(true);
+    }
+}
+
+function scroll2(){
+    if(window.innerWidth >= 1000){
+        smartScroll(window.innerHeight*2);
+    }else{
+        body2.scrollIntoView(true);
+    }
+}
+
+function scroll3(){
+    if(window.innerWidth >= 1000){
+        smartScroll(window.innerHeight*3);
+    }else{
+        contact.scrollIntoView(true);
     }
 }
 
@@ -109,7 +141,7 @@ totalTime += delay;
 
 let main = () => {
     document.getElementById('title-text2').addEventListener('click', e => {
-        document.getElementById('body1').scrollIntoView(true);
+        smartScroll(window.innerHeight);
     })
     document.getElementById('title-text2').addEventListener('mousedown', e => {
         let btn = e.target;
@@ -131,10 +163,10 @@ window.addEventListener('scroll', e => {
     let nav = document.getElementsByTagName('nav')[0].style;
     if(up){
         nav.backgroundColor = `rgba(0, 0, 0, ${number})`;
-        nav.boxShadow = `0 0 20px rgba(0, 0, 0, ${number})`
+        nav.boxShadow = `0 0 10px rgba(0, 0, 0, ${number})`
     }else{
         nav.backgroundColor = `rgba(0, 0, 0, 1)`;
-        nav.boxShadow = `0 0 20px rgba(0, 0, 0, 1)`
+        nav.boxShadow = `0 0 10px rgba(0, 0, 0, 1)`
     }
 })
 
