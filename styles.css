@@ -123,10 +123,13 @@ h2 {
   position: absolute;
   color: white;
   text-align: center;
-  top: 8%;
+  /* top: 8%; */
   pointer-events: none;
   transition: opacity 150ms ease-in-out;
   margin: 20px 30px;
+}
+.card-text p {
+  font-size: 15px;
 }
 #cards {
   position: relative;
@@ -137,6 +140,7 @@ h2 {
   grid-gap: 1.5em;
 }
 .card {
+  /* padding: 0; */
   position: relative;
   transition: all 150ms ease-in-out;
   border-radius: 20px;
