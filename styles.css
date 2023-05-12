@@ -116,20 +116,27 @@ h2 {
 }
 .card img {
   width: 100%;
+  /* height: 100%; */
   border-radius: inherit;
   opacity: 100%;
 }
 .card-text {
   position: absolute;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   /* top: 8%; */
-  pointer-events: none;
-  transition: opacity 150ms ease-in-out;
-  margin: 20px 30px;
+  /* pointer-events: none; */
+  transition: opacity 80ms ease-in-out;
+  margin: 10px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .card-text p {
   font-size: 15px;
+}
+.card-text a {
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
 }
 #cards {
   position: relative;
@@ -142,15 +149,16 @@ h2 {
 .card {
   /* padding: 0; */
   position: relative;
-  transition: all 150ms ease-in-out;
+  transition: all 60ms ease-in-out;
   border-radius: 20px;
   opacity: 100%;
+  /* height: 300px */
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.685); */
   /* border: 2px solid black; */
 }
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px black;
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgb(92, 92, 92);
 }
 .black-overlay {
   width: 100%;
@@ -158,16 +166,18 @@ h2 {
   position: absolute;
   background-color: black;
   border-radius: 18px;
-  opacity: 70%;
-  transition: opacity 150ms ease-in-out;
-  cursor: pointer;
+  opacity: 65%;
+  transition: opacity 60ms ease-in-out;
 }
-.black-overlay:hover {
+/* .black-overlay:hover {
+  opacity: 100%;
+} */
+.card:hover ~ .black-overlay {
+  opacity: 100%
+}
+/* .black-overlay:hover ~ .card-text {
   opacity: 0%;
-}
-.black-overlay:hover ~ .card-text {
-  opacity: 0%;
-}
+} */
 form {
   display: flex;
   flex-direction: column;
@@ -404,7 +414,7 @@ audio {
     transform: translate(-50%);
   }
   .card-text {
-    margin-top: 30px;
+    margin-top: 10px;
   }
   #resume {
     width: 50%;
